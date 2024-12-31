@@ -27,8 +27,8 @@ const Footer = () => {
           </Col>
           <Col lg={4} md={4} sm={4} xs={4} className="mb-4 mb-md-0">
             <h5 className="text-uppercase">Contact</h5>
-            <p>Email: support@viviacademy.com</p>
-            <p>Phone: +123 456 7890</p>
+            <p>Email: viviacademy.admission@gmail.com</p>
+            <p>Phone: +91 8925017524</p>
           </Col>
         </Row>
       </Container>
