@@ -116,7 +116,7 @@ const Home = () => {
               border: "4px solid black",
             }}
           ></span>
-          <div className="mt-2 font-semibold">viviacademy@gmail.com</div>
+          <div className="mt-2 font-semibold">viviacademy.admission@gmail.com</div>
         </div>
         <div>
           <span
@@ -127,7 +127,7 @@ const Home = () => {
               border: "4px solid black",
             }}
           ></span>
-          <div className="mt-2 font-semibold">+91 6382328740</div>
+          <div className="mt-2 font-semibold">+91 8925017524</div>
         </div>
         <div>
           <span
@@ -139,7 +139,7 @@ const Home = () => {
             }}
           ></span>
           <div className="mt-2 font-semibold">
-            No2, suruku sandhu dubaimain Road, Dubai
+            No2, Avinashi Road, Coimbatore
           </div>
         </div>
       </div>
