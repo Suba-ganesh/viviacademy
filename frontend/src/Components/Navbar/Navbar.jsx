@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, Form, FormControl, Button, Container, Row, Col } from 'react-bootstrap';
 import './Navbar.css';
+import logo from "../../assets/vivilogo.jpg"
 
 const CustomNavbar = () => {
   return (
@@ -9,7 +10,7 @@ const CustomNavbar = () => {
         {/* First Row: Brand and Search Bar */}
         <Row >
           <Col lg={6} sm={6} >
-            <Navbar.Brand href="#home" className="brand-logo">Vivi Academy</Navbar.Brand>
+            <Navbar.Brand href="#home" className="brand-logo"><img src={logo} alt="" height={40} width={100} /></Navbar.Brand>
           </Col>
           <Col lg={6} sm={6}>
             <Form className="a2 search-form">
