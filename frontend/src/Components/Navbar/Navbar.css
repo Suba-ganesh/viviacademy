@@ -52,7 +52,7 @@
 
     }
     .search-form {
-    margin-left: -50px!important;
+    margin-left: -60px!important;
     width: 54vw;
     
     }
@@ -68,8 +68,8 @@
       width: 100%;
       margin-top: 70px!important;
       font-size: 0.9rem;
-      margin-left: -20px!important;
-      justify-content: center;
+      margin-left: -30px!important;
+     justify-content: center;
     }
   
     .search-form .btn {
@@ -78,10 +78,10 @@
     }
   }
   
-  @media (max-width: 557px) {
+  @media (max-width: 576px) {
     .brand-logo {
       font-size: 1.4rem;
-      margin-left: -120px;
+      margin-left: -80px;
     }
   
     .a1 {
@@ -89,6 +89,8 @@
       font-size: 0.8rem;
       margin-right: 50px;
     }
+   
+      
   
     
   
