@@ -23,7 +23,19 @@ img:hover {
     height: 300px;
 }
 
+.p-carousel .p-carousel-indicators {
+  display: none;
+}
 
+.p-tabmenu .p-tabmenu-nav {
+  justify-content: center;
+}
+
+.p-tabmenu-nav .p-menuitem-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
 /* Responsive adjustments for small devices */
 @media screen and (max-width: 768px) {
     .innerhome {
@@ -86,22 +98,27 @@ img:hover {
         height: 2rem;
         padding: 5px;
       }
-
+     .img {
+      padding: 10px;
+     }
     .school-section {
         width: 6rem;
-        
+        margin-left: 2px;
     }
     .college-section {
         width: 6rem;
+        margin-left: 2px;
     }
     .professional-section {
         width: 6rem;
+        margin-left: 2px;
     }
 
     .college {
         width: 12rem; /* Further adjust width */
         font-size: 0.7rem;
       }
+
   
     .home .bg-green-500 .pi {
       font-size: 3rem; /* Further reduce icon size */

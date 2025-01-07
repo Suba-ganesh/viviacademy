@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, Form, FormControl, Button, Container, Row, Col } from 'react-bootstrap';
 import './Navbar.css';
-import logo from "../../assets/vivilogo.jpg"
+import logo from "../../assets/vivi.svg"
 
 const CustomNavbar = () => {
   return (

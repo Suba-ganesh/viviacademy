@@ -7,11 +7,11 @@ const Footer = () => {
     <footer className="bg-light text-center text-lg-start">
       <Container fluid className="footer1 p-4">
         <Row>
-          <Col lg={4} md={4} sm={4} xs={4} className="mb-4 mb-md-0">
+          <Col lg={4} md={4} sm={4} xs={3} className="mb-4 mb-md-0">
             <h5 className="text-uppercase">Vivi Academy</h5>
             <p>Your gateway to learning anything, anywhere, anytime.</p>
           </Col>
-          <Col lg={4} md={4} sm={4} xs={4} className="mb-4 mb-md-0">
+          <Col lg={4} md={4} sm={4} xs={3} className="mb-4 mb-md-0">
             <h5 className="text-uppercase">Links</h5>
             <ul className="list-unstyled">
               <li>
@@ -25,10 +25,10 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col lg={4} md={4} sm={4} xs={4} className="mb-4 mb-md-0">
+          <Col lg={4} md={4} sm={3} xs={3} className="mb-4 mb-md-0">
             <h5 className="text-uppercase">Contact</h5>
             <p>Email: viviacademy.admission@gmail.com</p>
-            <p>Phone: +91 8925017524</p>
+            <p>Phone:8925017524</p>
           </Col>
         </Row>
       </Container>
