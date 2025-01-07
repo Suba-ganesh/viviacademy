@@ -1,0 +1,132 @@
+.innerhome {
+    width: 100%;
+    height: max-content;
+}
+.school {
+    background-color: brown;
+    width: 18rem;
+    height: 3rem;
+    padding: 10px;
+}
+.job {
+    background-color: brown;
+    width: 18rem;
+    height: 3rem;
+    padding: 10px;
+}
+img:hover {
+    transform: scale(1.05);
+    margin-bottom: 8px;
+}
+
+.p-corousel-item {
+    height: 300px;
+}
+
+.p-carousel .p-carousel-indicators {
+  display: none;
+}
+
+.p-tabmenu .p-tabmenu-nav {
+  justify-content: center;
+}
+
+.p-tabmenu-nav .p-menuitem-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+/* Responsive adjustments for small devices */
+@media screen and (max-width: 768px) {
+    .innerhome {
+      display: inline;
+    }
+  
+    .innerhome img {
+      height: 200px; /* Reduce image size */
+      width: 200px;
+    }
+  
+    .school {
+      width: 14rem; /* Adjust width for smaller screens */
+      font-size: 0.8rem;
+    }
+  
+    .home .bg-purple-300 {
+      padding: 2rem; /* Reduce padding */
+      height: auto; /* Adjust height */
+    }
+  
+    .home .bg-green-500 {
+      flex-direction: column; /* Stack contact items vertically */
+      align-items: center;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+  
+    .home .bg-green-500 div {
+      margin-bottom: 2rem; /* Add spacing between items */
+    }
+  
+    .home .bg-green-500 .pi {
+      font-size: 4rem; /* Reduce icon size */
+      padding: 2rem;
+    }
+  
+    .home .bg-green-500 .mt-2 {
+      font-size: 0.9rem; /* Adjust text size */
+    }
+  }
+  
+  /* Very small devices (like phones) */
+  @media screen and (max-width: 480px) {
+    .innerhome img {
+      height: 100px; /* Further reduce image size */
+      width: 100px;
+    }
+  
+    .school {
+      width: 6rem; /* Further adjust width */
+      font-size: 0.7rem;
+      height: 2rem;
+      padding: 5px;
+    }
+
+    .job {
+        width: 7rem; /* Further adjust width */
+        font-size: 0.7rem;
+        height: 2rem;
+        padding: 5px;
+      }
+     .img {
+      padding: 10px;
+     }
+    .school-section {
+        width: 6rem;
+        margin-left: 2px;
+    }
+    .college-section {
+        width: 6rem;
+        margin-left: 2px;
+    }
+    .professional-section {
+        width: 6rem;
+        margin-left: 2px;
+    }
+
+    .college {
+        width: 12rem; /* Further adjust width */
+        font-size: 0.7rem;
+      }
+
+  
+    .home .bg-green-500 .pi {
+      font-size: 3rem; /* Further reduce icon size */
+      padding: 1.5rem;
+    }
+  
+    .home .bg-green-500 .mt-2 {
+      font-size: 0.8rem; /* Adjust text size */
+    }
+  }
+  
