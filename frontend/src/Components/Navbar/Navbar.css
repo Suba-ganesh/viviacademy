@@ -3,6 +3,7 @@
     padding: 10px 0;
     height:auto;
     overflow: hidden;
+    display: flex;
   }
   
   /* Brand Logo */
@@ -17,7 +18,8 @@
     display: flex;
     align-items:flex-end;
     justify-content: center;
-    width: 25vw;
+    width: 35vw!important;
+    border-radius: 160px!important;
   }
   
   .search-form .form-control {
@@ -28,7 +30,9 @@
     color: #6a1b9a;
     background-color: #fff;
     border: none;
-    margin-left: 10px;
+    border-radius: 50px;
+    margin-left: 5px!important;
+   
   }
   
   /* Navigation Links */
@@ -36,6 +40,7 @@
     color: #fff !important;
     font-size: 1rem;
     margin: 0 10px;
+    flex-direction: row;
   }
   
   /* Media Queries */
@@ -48,12 +53,12 @@
     .custom-navbar{
         padding-top: -100px;
         width: 100%;
-        height: auto!important;
+        height: 100px!important;
 
     }
     .search-form {
     margin-left: -60px!important;
-    width: 54vw;
+    width: auto!important;
     
     }
     
@@ -81,13 +86,20 @@
   @media (max-width: 576px) {
     .brand-logo {
       font-size: 1.4rem;
-      margin-left: -80px;
+      margin-left: -80px!important;
     }
+    .search-form {
+      margin-left: -70px!important;
+     
+      
+      }
+      
+    
   
     .a1 {
 
       font-size: 0.8rem;
-      margin-right: 50px;
+      margin-right: 50px!important;
     }
    
       
@@ -102,3 +114,42 @@
   }
   
   /* Media Queries */
+  @media (max-width: 992px) {
+    /* Brand and Search Bar on Same Line for Small Screens */
+    .custom-navbar .row:first-child {
+      flex-wrap: nowrap;
+      /* Prevent wrapping */
+    }
+    .custom-navbar{
+        padding-top: -100px;
+        width: 100%;
+        height: 120px!important;
+
+    }
+    .search-form {
+   
+    width: auto!important;
+    padding-left: 0px;
+    
+    }
+    
+  
+    .brand-logo {
+      font-size: 1.1rem;
+      margin-right: 0px!important;
+
+    }
+  
+    .nav-link {
+      width: 100%;
+      margin-top: 70px!important;
+      font-size: 0.9rem;
+    justify-content: flex-start;
+    margin: auto;
+    }
+  
+    .search-form .btn {
+      margin-left: 5px!important;
+      width: 50px;
+    }
+  }
