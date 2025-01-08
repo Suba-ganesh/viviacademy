@@ -78,7 +78,7 @@ const Home = () => {
             className="border-circle"
           />
           <div className="school section-label border-round-3xl align-items-center font-bold text-white">
-            <p>School Student</p>
+            <p><a className="a5" href="/school-courses">School Student</a></p>
           </div>
         </div>
 
@@ -95,7 +95,7 @@ const Home = () => {
             className="border-circle"
           />
           <div className="school section-label border-round-3xl align-items-center font-bold text-white">
-            <p>College Student</p>
+            <p><a className="a5" href="/college-courses">College Student</a></p>
           </div>
         </div>
 
@@ -112,7 +112,7 @@ const Home = () => {
             className="border-circle"
           />
           <div className="job section-label border-round-3xl align-items-center font-bold text-white">
-            <p>Job Professionals</p>
+            <p><a className="a5" href="/professional-courses">Job Professionals</a></p>
           </div>
         </div>
       </div>
@@ -125,13 +125,13 @@ const Home = () => {
       </div>
 
       {/* TabMenu with dynamic content */}
-      <div className="card w-full text-center">
+      <div id="category" className="card w-full text-center">
         <TabMenu
           model={items}
           activeIndex={activeIndex}
           onTabChange={(e) => setActiveIndex(e.index)}
         />
-        <div className="tab-content mt-4">{renderTabContent()}</div>
+        <div className="tab-content">{renderTabContent()}</div>
       </div>
     </div>
   );

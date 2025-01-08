@@ -8,7 +8,6 @@ import motion from './course_img/motion-graphics.webp';
 import social from './course_img/social.avif';
 import datascience from './course_img/datascience.jpg';
 import dataScienceMachineLearning from './course_img/ml.webp';
-import javaFullStack from './course_img/java-fullstack.jpg';
 import web from './course_img/web.jpg';
 import htmlCss from './course_img/html.jpeg';
 import animation from './course_img/animation.avif';
@@ -341,7 +340,7 @@ export const collegeCourses = [
       id: 5,
       title: "Java Full Stack Development",
       dataset: "collegeCourses",
-      img: javaFullStack,
+      img: java,
       overview: "Master Java and become proficient in full-stack development by learning how to build dynamic, scalable web applications from front-end to back-end.",
       learn: [
         "Java 8+ features and libraries",

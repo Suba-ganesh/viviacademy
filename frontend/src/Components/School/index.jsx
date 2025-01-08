@@ -22,17 +22,16 @@ const SchoolCourse = () => {
           <Col key={course.id} lg={3} md={4} sm={6} className="mb-4">
             <Card
               onClick={() => handleCardClick(course.id)}
-              className="cursor-pointer"
+              className="school-card cursor-pointer"
             >
               <Card.Img
                 variant="top"
-                className="detail-img"
+                className="detail-img2"
                 src={course.img}
                 alt={course.title}
               />
               <Card.Body>
-                <Card.Title>{course.title}</Card.Title>
-                <Card.Text>{course.overview}</Card.Text>
+                <Card.Title className="school-card-title">{course.title}</Card.Title>
               </Card.Body>
             </Card>
           </Col>

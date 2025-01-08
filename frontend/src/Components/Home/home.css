@@ -8,6 +8,10 @@
     height: 3rem;
     padding: 10px;
 }
+.a5{
+  text-decoration: none;
+  color: white;
+}
 .job {
     background-color: brown;
     width: 18rem;

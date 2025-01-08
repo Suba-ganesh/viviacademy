@@ -18,7 +18,7 @@ const CustomNavbar = () => {
         <Row>
           <Col lg={6} sm={6}>
             <Navbar.Brand href="#home" className="brand-logo">
-              <img src={logo} alt="" height={40} width={100} />
+              <img src={logo} alt="" height={60} />
             </Navbar.Brand>
           </Col>
           <Col lg={6} sm={6}>
@@ -40,13 +40,13 @@ const CustomNavbar = () => {
         <Row>
           <Col lg={12} sm={12}>
             <Nav>
-              <Nav.Link href="#home" className="nav-link a1">
+              <Nav.Link href="/" className="nav-link a1">
                 Home
               </Nav.Link>
-              <Nav.Link href="#categories" className="nav-link a1">
+              <Nav.Link href="#category" className="nav-link a1">
                 Category
               </Nav.Link>
-              <Nav.Link href="#profile" className="nav-link a1">
+              <Nav.Link href="/profile" className="nav-link a1">
                 Profile
               </Nav.Link>
             </Nav>

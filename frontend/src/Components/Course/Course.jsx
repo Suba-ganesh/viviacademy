@@ -22,19 +22,19 @@ const CourseCards = () => {
   const courseTemplate = (course) => (
     <div className="p-3">
       <div
-        className="card cursor-pointer"
+        className="card course-card cursor-pointer"
         onClick={() => handleCardClick(course.id)}
         style={{ textAlign: "center" }}
       >
         <img
           src={course.img}
           alt={course.title}
-          className="detail-img w-100"
-          style={{ maxHeight: "200px", objectFit: "cover" }}
+          className="detail-img2"
+
         />
         <div className="card-body">
-          <h5>{course.title}</h5>
-          <p>{course.overview}</p>
+          <h5 className="course-card-title">{course.title}</h5>
+          
         </div>
       </div>
     </div>

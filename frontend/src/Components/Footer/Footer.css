@@ -5,13 +5,13 @@
 }
 
 footer h5 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #6a1b9a;
 }
 
 footer p, footer a {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color:white;
   margin: 0;
 }
@@ -33,6 +33,26 @@ footer .bg-dark {
 footer .text-light {
   color: #ffffff !important;
 }
+@media (max-width:1200px) {
+  footer h5 {
+    font-size: 1.5rem;
+  }
+
+  footer p, footer a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:992px) {
+  footer h5 {
+    font-size: 1.4rem;
+  }
+
+  footer p, footer a {
+    font-size: 0.9rem;
+  }
+}
+
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -41,7 +61,7 @@ footer .text-light {
   }
 
   footer p, footer a {
-    font-size: 0.8rem;
+    font-size: 0.685rem!important;
   }
 }
 
@@ -55,6 +75,6 @@ footer .text-light {
   }
 
   footer p, footer a {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 }

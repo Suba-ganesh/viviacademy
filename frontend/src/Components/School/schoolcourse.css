@@ -1,0 +1,80 @@
+.school-card {
+    border: 1px solid #6a1b9a;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 300px;
+    width: 250px;
+    object-fit: contain;
+  }
+  
+  .school-card-title {
+    color: #6a1b9a;
+    font-weight: bold;
+  }
+  
+  .school-card-text {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  .detail-img2{
+    height:250px;
+    width: auto;
+  }
+  
+  @media(max-width:1200px){
+    .school-card{
+        height: 230px;
+        width: 200px;
+        margin: 5px;
+    }
+    .detail-img2{
+        height:130px;
+        width:auto;
+      }
+  }
+  @media(max-width:992px){
+    .school-card{
+        height: 220px!important;
+        width: 180px!important;
+        margin: 5px;
+    }
+    .detail-img2{
+        height:150px!important;
+        width:auto!important;
+      }
+      .school-card-title {
+       font-size: medium;
+      }
+  }
+  @media(max-width:768px){
+    .school-card{
+        height: 200px;
+        width: 150px;
+        margin: 2px;
+    }
+    .detail-img2{
+        height:150px;
+        width: 200px;
+      }
+  }
+
+  @media(max-width:576px){
+    .school-card{
+        height: 150px!important;
+        width: 130px!important;
+    }
+    .detail-img2{
+        height:130px!important;
+        width: auto!important;
+      }
+      .school-card-title {
+        font-size: x-small;
+      }
+      
+      .school-card-text {
+        font-size: 0.7rem;
+        font-weight: bold;
+
+      }
+  }
+
