@@ -1,15 +1,14 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { Container } from "react-bootstrap";
-import { courses,collegeCourses ,professionalCourses } from "../../assets/courseData";
+import { courses, collegeCourses, professionalCourses } from "../../assets/courseData";
 import "./CourseDetails.css";
-
 
 const CourseDetails = () => {
   const { id, dataset } = useParams(); // Retrieve both id and dataset from the URL
 
   // Map datasets to their identifiers
-  const datasets = {courses,collegeCourses,professionalCourses};
+  const datasets = { courses, collegeCourses, professionalCourses };
   console.log("Dataset from URL:", dataset); // Log the dataset parameter
   console.log("Available datasets:", Object.keys(datasets));
   // Ensure the dataset exists
@@ -26,7 +25,7 @@ const CourseDetails = () => {
   }
 
   return (
-    <Container className=" details my-5">
+    <Container className="details my-5">
       {/* Display Course Image */}
       <img
         src={course.img} // Make sure the course object has the 'image' property
@@ -42,6 +41,15 @@ const CourseDetails = () => {
         >
           Enquire Now
         </button>
+        {/* WhatsApp Button */}
+        <a
+          href="https://wa.me/918925017524"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="whatsapp-btn"
+        >
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="30" />
+        </a>
       </div>
       <h4> Course Overview</h4>
       <p>{course.overview}</p>

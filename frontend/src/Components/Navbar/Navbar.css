@@ -2,7 +2,6 @@
     background-color: #6a1b9a; /* Purple */
     padding: 10px 0;
     height:auto;
-    overflow: hidden;
     display: flex;
   }
 
@@ -139,9 +138,7 @@
       flex-wrap: nowrap;
       /* Prevent wrapping */
     }
-    .custom-navbar{
-      overflow-y:hidden!important;
-    }
+   
     .brand-logo {
       font-size: 1.4rem;
       margin-left:-100px!important;
@@ -199,3 +196,64 @@
   }
   
   /* Media Queries */
+  .filtered-courses {
+    position: absolute; /* Ensure the search results appear above other content */
+    top: 100%; /* Position it right below the search bar */
+    left: 0;
+    right: 0;
+    background-color: #f9f9f9; /* Light gray background */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+    z-index: 1000; /* Ensure it appears above other components */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  }
+  
+  .filtered-courses h5 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .filtered-courses ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .filtered-courses ul li {
+    margin-bottom: 10px;
+  }
+  
+  .filtered-courses ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .filtered-courses ul li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  .input-with-icon {
+    position: relative; /* Allows positioning of the icon within the container */
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 10px; /* Adjust based on your design */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa; /* Light gray for the icon */
+    font-size: 1.2rem;
+  }
+  
+  .input-with-icon .form-control {
+    padding-left: 35px; /* Add space for the icon */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    font-size: 1rem; /* Adjust the font size */
+  }
+  

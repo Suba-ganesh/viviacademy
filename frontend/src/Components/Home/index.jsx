@@ -112,7 +112,7 @@ const Home = () => {
             className="border-circle"
           />
           <div className="job section-label border-round-3xl align-items-center font-bold text-white">
-            <p><a className="a5" href="/professional-courses">Job Professionals</a></p>
+            <p><a className="a5" href="/professional-courses">Professionals</a></p>
           </div>
         </div>
       </div>

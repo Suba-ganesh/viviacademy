@@ -3,22 +3,35 @@ import { Navbar, Nav, Container, Row, Col } from "react-bootstrap";
 import { FaSearch } from "react-icons/fa";
 import "./Navbar.css";
 import logo from "../../assets/vivilogo.jpg";
-import courseData from "../../assets/courseData"; // Example course data
+import courseData from "../../assets/courseData";
 
 const CustomNavbar = () => {
   const [searchQuery, setSearchQuery] = useState(""); // State to track search input
   const [filteredCourses, setFilteredCourses] = useState([]); // State for filtered courses
 
+  // Combine all datasets into a single array
+  const allCourses = [
+    ...courseData.courses,
+    ...courseData.collegeCourses,
+    ...courseData.professionalCourses,
+  ];
+
   // Handle search input change
   const handleSearch = (e) => {
-    const query = e.target.value.toLowerCase();
+    const query = e.target.value.toLowerCase().trim();
     setSearchQuery(query);
 
-    // Filter courses based on the query
-    const filtered = courseData.courses.filter((course) =>
-      course.title.toLowerCase().includes(query)
-    );
-    setFilteredCourses(filtered);
+    if (query) {
+      // Filter across all datasets
+      const filtered = allCourses.filter(
+        (course) =>
+          course.title.toLowerCase().includes(query) ||
+          course.dataset.toLowerCase().includes(query)
+      );
+      setFilteredCourses(filtered);
+    } else {
+      setFilteredCourses([]); // Clear filtered courses if query is empty
+    }
   };
 
   return (
@@ -33,20 +46,41 @@ const CustomNavbar = () => {
           </Col>
           <Col lg={6} sm={6}>
             <div className="input-group a2 search-form">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Search courses"
-                aria-label="Search"
-                value={searchQuery}
-                onChange={handleSearch}
-              />
-              <button className="btn btn-primary" type="button">
-                <FaSearch />
-              </button>
+              <div className="input-with-icon">
+                <FaSearch className="search-icon" />
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Search courses"
+                  aria-label="Search"
+                  value={searchQuery}
+                  onChange={handleSearch}
+                />
+              </div>
             </div>
           </Col>
         </Row>
+
+        {/* Display Filtered Courses */}
+        {filteredCourses.length > 0 && (
+          <Row className="mt-5">
+            <Col lg={12} sm={12}>
+              <div className="filtered-courses">
+                <h5>Search Results:</h5>
+                <ul>
+                  {filteredCourses.map((course) => (
+                    <li key={`${course.id}-${course.dataset}`}>
+                      <a href={`/course/${course.dataset}/${course.id}`}>
+                        {course.title}{" "}
+                        <span className="course-info">({course.dataset})</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Col>
+          </Row>
+        )}
 
         {/* Second Row: Navigation Links */}
         <Row>
@@ -65,7 +99,6 @@ const CustomNavbar = () => {
           </Col>
         </Row>
       </Container>
-      
     </Navbar>
   );
 };

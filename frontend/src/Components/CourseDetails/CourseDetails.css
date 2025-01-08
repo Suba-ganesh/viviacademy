@@ -168,4 +168,21 @@
        margin-bottom: 10px;
      }
    }
-   
+   .whatsapp-btn {
+    display: inline-block;
+    margin-left: 10px; /* Adds space between the Enquire button and WhatsApp button */
+    background-color: #25d366;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .whatsapp-btn:hover {
+    background-color: #128c7e; /* Darker shade of green for hover effect */
+  }
+  
+  .whatsapp-btn img {
+    width: 30px; /* Size of the WhatsApp icon */
+    height: 30px;
+  }
+  
