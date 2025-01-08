@@ -19,11 +19,11 @@ const CollegeCourse = () => {
     <Container className="my-5">
       <Row xs={2}>
         {Array.isArray(colleges) && colleges.map((data) => (
-          <Col key={data.id} lg={3} md={4} sm={6} className="college mb-4">
-            <Card onClick={() => handleCardClick(data.id)} className="college-card cursor-pointer">
+          <Col key={data.id} lg={3} md={4} sm={6}  className="professional mb-4">
+            <Card onClick={() => handleCardClick(data.id)} className="professional-card cursor-pointer">
               <Card.Img variant="top" className="detail-imgs" src={data.img} alt={data.title} />
               <Card.Body>
-                <Card.Title className="college-card-title">{data.title}</Card.Title>
+                <Card.Title className="professional-card-title">{data.title}</Card.Title>
               </Card.Body>
             </Card>
           </Col>
