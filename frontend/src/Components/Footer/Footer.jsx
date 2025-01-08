@@ -15,13 +15,13 @@ const Footer = () => {
             <h5 className="text-uppercase">Links</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#!" className="text-dark footer-a">Home</a>
+                <a href="/" className="text-dark footer-a">Home</a>
               </li>
               <li>
-                <a href="#!" className="text-dark footer-a">Category</a>
+                <a href="#category" className="text-dark footer-a">Category</a>
               </li>
               <li>
-                <a href="#!" className="text-dark footer-a">Profile</a>
+                <a href="/profile" className="text-dark footer-a">Profile</a>
               </li>
             </ul>
           </Col>
