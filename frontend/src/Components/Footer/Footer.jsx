@@ -7,9 +7,11 @@ const Footer = () => {
     <footer className="bg-light text-center text-lg-start">
       <Container fluid className="footer1 p-4">
         <Row xs={4}>
-          <Col lg={4} md={4} sm={4}  className="mb-4 mb-md-0">
-            <h5 className="text-uppercase">Vivi Academy</h5>
+          <Col lg={4} md={4} sm={4}  className="footer-vivi mb-4 mb-md-0">
+          <div className=''>
+            <h5 className=" text-uppercase">Vivi Academy</h5>
             <p>Your gateway to learning anything, anywhere, anytime.</p>
+            </div>
           </Col>
           <Col lg={4} md={4} sm={4}  className="mb-4 mb-md-0">
             <h5 className="text-uppercase">Links</h5>

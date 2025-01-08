@@ -5,6 +5,38 @@
     overflow: hidden;
     display: flex;
   }
+
+   .search-results .container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .search-results > div > h5 {
+    display: none;
+  }
+  .search-results > div > ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: black;
+    background-color:#bc77e8;
+    list-style: none;
+  }
+
+  .search-results > div > ul > li {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid grey;
+
+  }
+
+  .search-results > div > ul > li > a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
   
   /* Brand Logo */
   .brand-logo {

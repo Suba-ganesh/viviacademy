@@ -12,3 +12,33 @@
 .detail-img {
   border-radius: 8px 8px 0 0;
 }
+
+.my-carousel-container {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+
+.p-carousel-content {
+  overflow: visible !important;
+}
+
+.p-carousel {
+  padding: 0 !important;
+}
+
+
+.carousel-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .card-text {
+    display: none;
+  }
+}
